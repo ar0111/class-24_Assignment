@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center h-screen">
+    <div class="w-full">
+        <h1 class="text-center text-2xl font-bold my-2">Bank Of Dreams</h1>
+        <section class="grid grid-cols-3">
+            <div class="bg-amber-300 p-3 m-5 rounded flex justify-between">
+                <h4 class="text-xl font-bold">Deposit</h4>
+                <h2 class="text-2xl font-bold">$<span id="deposite-amount">50</span></h2>
+            </div>
+            <div class="bg-lime-300 p-3 m-5 rounded flex justify-between">
+                <h4 class="text-xl font-bold">WithDraw</h4>
+                <h2 class="text-2xl font-bold">$<span id="withdraw-amount">50</span></h2>
+            </div>
+            <div class="bg-green-300 p-3 m-5 rounded flex justify-between">
+                <h4 class="text-xl font-bold">Balance</h4>
+                <h2 class="text-2xl font-bold">$<span id="balance-amount">50</span></h2>
+            </div>
+        </section>
+        <div class="grid grid-cols-2 p-3 bg-green-300 m-5 gap-5 rounded">
+            <div class="p-3 rounded bg-amber-300">
+                <input id="deposite-field" class="mb-5 p-3 rounded block w-full" type="number" min ='0' placeholder="Enter Your Deposite Amount">
+                <button id="deposite-btn" class="bg-cyan-500 rounded p-2 font-bold text-xl text-white w-full">Deposit</button>
+            </div>
+            <div class="p-3 rounded bg-lime-300">
+                <input id="withdraw-field" class="mb-5 p-3 rounded block w-full" type="number" min ='0' placeholder="Enter Your Withdraw Amount">
+                <button id="withdraw-btn" class="bg-cyan-500 rounded p-2 font-bold text-xl text-white w-full">Withdraw</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="calculation.js"></script>
+</body>
+</html>
